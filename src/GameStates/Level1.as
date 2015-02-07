@@ -11,6 +11,8 @@ package GameStates{
 	import Box2D.Common.Math.b2Vec2;
 	import Box2D.Dynamics.b2Body;
 	
+	import Handlers.HeroObject;
+	
 	import IO.MovmentListener;
 	
 	import Interfaces.IGameState;
@@ -227,6 +229,10 @@ package GameStates{
 			}
 		}
 		
+		
+		
+		
+		
 		private var runSwitch:Boolean = true;
 		private var runSwitch2:Boolean = false;
 		private var HeroUpDirection:int = 1;
@@ -234,6 +240,7 @@ package GameStates{
 		private var HeroUpIdle:Boolean = false;
 		private var HeroUpJumping:Boolean = false;
 		private var playingSound:Boolean = false;
+		
 		private var heroUpDescending:Boolean = false;
 		private function EndLevel():void{
 			_game.changeState(Game.STATE_LEVEL_2);
